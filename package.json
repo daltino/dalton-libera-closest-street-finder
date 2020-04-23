@@ -1,0 +1,52 @@
+{
+  "name": "libera-nearest-street-finder",
+  "version": "1.0.0",
+  "description": "An API that finds the street closest to a user input coordinate",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf dist && webpack --mode development",
+    "start": "node ./dist/server.js",
+    "start-dev": "nodemon ./dist/server.js",
+    "test": "jest",
+    "eslint": "eslint \"src/**/*.js\" --fix",
+    "verify-tests": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daltino/node-distance-api.git"
+  },
+  "keywords": [
+    "node",
+    "api",
+    "distance",
+    "straight",
+    "linear",
+    "points",
+    "street",
+    "distance",
+    "slope"
+  ],
+  "author": "Dalton Whyte <daltino07@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/daltino/node-distance-api/issues"
+  },
+  "homepage": "https://github.com/daltino/node-distance-api#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "eslint": "^6.8.0",
+    "jest": "^25.4.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-node-externals": "^1.7.2"
+  }
+}

@@ -60,7 +60,7 @@ app.get('/closest/:point', (req, res) => {
     if (closestStreets) {
       res.status(200).send(closestStreets);
     } else {
-      res.status(200).send('Could not find any streets close to that point');
+      res.status(404).send('Could not find any streets close to that point');
     }
   } catch (err) {
     console.error(err);
